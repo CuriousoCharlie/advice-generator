@@ -81,3 +81,14 @@ button {
     color: var(--grayish-blue); 
     text-decoration: none;
 }
+
+@media only screen and (min-width: 939px) {
+    .advice-container {
+        width: 40%;
+        height: 420px !important;
+    }
+
+    .advice {
+        width: 90%;
+    }
+}

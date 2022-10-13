@@ -15,7 +15,7 @@ const fetchAdvice = () => {
     let apiData = fetch("https://api.adviceslip.com/advice")
     .then((response) => response.json())
     .then((data) => {
-        if (data.slip.advice.length > 100) {
+        if (data.slip.advice.length > 1) {
             enlargedContainer = true;
         } else {
             enlargedContainer = false;
