@@ -62,7 +62,7 @@ button {
     bottom: -37.5px;
     border-radius: 50%;
     border-style: none;
-    background-image: url("./images/icon-dice.svg");
+    background-image: url("/images/icon-dice.svg");
     background-repeat: no-repeat;
     background-position: 22px;
     background-size: 30px;
