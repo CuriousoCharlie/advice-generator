@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+/* Enlarge/ shrink container based on advice length */
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--dark-blue);
+}
+
+.advice-container {
+    position: relative;
+    width: 90%;
+    height: 400px;
+    margin: 100px auto;
+    border-radius: 10px;
+    background-color: var(--dark-grayish-blue);
+}
+
+.enlarge-container {
+    height: 550px;
+}
+
+.advice-number, .advice, .divider, button {
+    position: absolute;
+}
+
+.advice-number, .advice, .divider, button, .attribution {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.advice-number {
+    top: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--neon-green);
+}
+
+.advice {
+    top: 70px;
+    width: 80%;
+    margin: 20px auto;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    color: var(--light-cyan);
+}
+
+.divider {
+    bottom: 75px;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    bottom: -37.5px;
+    border-radius: 50%;
+    border-style: none;
+    background-image: url("/images/icon-dice.svg");
+    background-repeat: no-repeat;
+    background-position: 22px;
+    background-size: 30px;
+    background-color: var(--neon-green);
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 20px;
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--light-cyan);
+}
+
+.attribution a { 
+    color: var(--grayish-blue); 
+    text-decoration: none;
+}
